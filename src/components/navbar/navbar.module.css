@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Bokor&family=Concert+One&family=Lilita+One&family=Oswald:wght@200..700&family=Sixtyfour+Convergence&display=swap');
+
+
+
+
+.nameBrand {
+    font-family: "Bokor", system-ui;
+    font-size: 2rem !important;
+    color: #d23232; 
+    background-image: linear-gradient(45deg, #d23232 29%, #b961e5 46%, #bea6c9 56%, #9400D8 85%);  
+    background-clip: text; 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;  
+    background-size: 200%;
+    animation: gradient-animation 2s infinite alternate;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: left;
+    }
+
+    100% {
+        background-position: right;
+    }
+}

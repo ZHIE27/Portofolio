@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Bokor&family=Concert+One&family=Lilita+One&family=Oswald:wght@200..700&family=Sixtyfour+Convergence&display=swap');
+
+.container .title {
+    font-family: "Bokor", system-ui;
+    font-size: 5rem;
+}
+
+.container {
+    top: -250px;
+    width: 90%;
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+    min-height: 100vh;
+    max-height: max-content;
+}
+
+
+.wrap {
+    width: 90%;
+    height: 300px;
+}
+
+
+.desc {
+
+    word-wrap: break-word;
+    width: 500px;
+    border: 2px solid black;
+}
+
+.container .wrapping .img {
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+}
+
+@media only screen and (max-width: 600px) {
+    .container .title {
+        font-size: 4rem;
+    }
+
+    .desc{
+        margin: 10px 0;
+        width: 400px;
+    }
+    .wrap {
+        height: 500px;
+    }
+    .container .wrapping .img {
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    }
+}

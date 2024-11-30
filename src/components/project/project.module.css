@@ -1,0 +1,109 @@
+/* Tilte Page Font */
+@import url('https://fonts.googleapis.com/css2?family=Bokor&family=Concert+One&family=Lilita+One&family=Oswald:wght@200..700&family=Sixtyfour+Convergence&display=swap');
+
+/* Cards Font */
+@import url('https://fonts.googleapis.com/css2?family=Bokor&family=Concert+One&family=Dhurjati&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Lilita+One&family=Oswald:wght@200..700&family=Sixtyfour+Convergence&display=swap');
+
+.container {
+    padding: 60px 20px;
+    top: -77px;
+    width: 90%;
+    clip-path: polygon(0  10%, 100% 0, 100% 90%, 0 100%);
+    min-height: 130vh;
+    max-height: 150vh;
+    overflow-y: scroll;
+}
+
+.titlePage {
+    margin-top: 28px;
+    font-family: "Bokor", system-ui;
+    font-size: 5rem;
+}
+
+.card {
+    width: 240px;
+    height: 140px;
+    overflow: hidden;
+}
+
+.card a img {
+    width: 240px;
+    height: 140px;
+}
+
+.card span {
+    top: -140px;
+    width: 240px;
+    height: 140px;
+    line-height: 140px;
+    font-family: "Dhurjati", sans-serif;
+    color: white;
+    display: none;
+}
+
+.card:hover span {
+    display: block;
+    animation: animasiSpan .3s ease alternate;
+}
+
+.card:hover img {
+    animation: animasiImage .3s ease forwards;
+}
+
+@keyframes animasiSpan {
+    0% {
+        height: 0px;
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 50%;
+        height: 140px;
+    }
+}
+
+@keyframes animasiImage {
+    0% {
+        transform: scale(1.0);
+    }
+
+    100%{
+        transform: scale(1.5);
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .card {
+
+        width: 200px;
+        height: 100px;
+    }
+    
+    .card a img {
+        width: 200px;
+        height: 100px;
+    }
+    
+    .card span {
+        top: -100px;
+        width: 200px;
+        height: 100px;
+        line-height: 100px;
+        font-family: "Dhurjati", sans-serif;
+        color: white;
+        display: none;
+    }
+
+    @keyframes animasiSpan {
+        0% {
+            height: 0px;
+            opacity: 0;
+        }
+    
+        100% {
+            opacity: 50%;
+            height: 100px;
+        }
+    }
+}
