@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./about.module.css"
-
+import Image from 'next/image';
 const About = ()=> {
     return (
         <>
@@ -12,7 +12,9 @@ const About = ()=> {
                         <p>I am a Junior Front-End Web Developer who has good skills and understanding in developing user interfaces for web applications. By mastering the basics of front-end technologies such as HTML, CSS, and JavaScript, I am able to build responsive, visually attractive, and functional web pages.</p>
                     </div>
                     <div className={`${style.img}`}>
-                        <img src="img/profile/pp.jpg"></img>
+                        <Image src="img/profile/pp.jpg" alt="profile"
+                        width={200}
+                        height={200}/>
                     </div>
                 </div>
             </div>

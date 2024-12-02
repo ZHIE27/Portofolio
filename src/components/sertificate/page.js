@@ -1,18 +1,19 @@
-'use client'
+'use client';
 
 import React, { useState } from "react";
+import Image from "next/image";
 import style from "./sertificate.module.css";
 
 const Sertificate = () => {
     const projectList = [
-        { id: 1, imgUrl: 'img/certificate/img.jpg', desc: 'Project 1' },
-        { id: 2, imgUrl: 'img/certificate/img.jpg', desc: 'Project 2' },
-        { id: 3, imgUrl: 'img/certificate/img.jpg', desc: 'Project 3' },
-        { id: 4, imgUrl: 'img/certificate/img.jpg', desc: 'Project 4' },
-        { id: 5, imgUrl: 'img/certificate/img.jpg', desc: 'Project 5' },
-        { id: 6, imgUrl: 'img/certificate/img.jpg', desc: 'Project 6' },
-        { id: 7, imgUrl: 'img/img.jpg', desc: 'Project 7' },
-        { id: 8, imgUrl: 'img/img.jpg', desc: 'Project 8' },
+        { id: 1, imgUrl: '/img/certificate/img.jpg', desc: 'Project 1' },
+        { id: 2, imgUrl: '/img/certificate/img.jpg', desc: 'Project 2' },
+        { id: 3, imgUrl: '/img/certificate/img.jpg', desc: 'Project 3' },
+        { id: 4, imgUrl: '/img/certificate/img.jpg', desc: 'Project 4' },
+        { id: 5, imgUrl: '/img/certificate/img.jpg', desc: 'Project 5' },
+        { id: 6, imgUrl: '/img/certificate/img.jpg', desc: 'Project 6' },
+        { id: 7, imgUrl: '/img/img.jpg', desc: 'Project 7' },
+        { id: 8, imgUrl: '/img/img.jpg', desc: 'Project 8' },
     ];
 
     const [selectImg, setSelectImg] = useState(null);
@@ -29,7 +30,13 @@ const Sertificate = () => {
                                 className={`${style.card} bg-slate-500`}
                                 onClick={() => setSelectImg(item.imgUrl)}
                             >
-                                <img src={item.imgUrl} alt="Certificate"></img>
+                                <Image
+                                    src={item.imgUrl}
+                                    alt="Certificate"
+                                    width={240}
+                                    height={140}
+                                    className={`${style.image}`}
+                                />
                                 <div className={`${style.wrap} relative`}>
                                     <span className={`${style.titleCard} text-3xl text-center`}>{item.desc}</span>
                                 </div>
@@ -46,10 +53,12 @@ const Sertificate = () => {
                     onClick={() => setSelectImg(null)}
                 >
                     <div className="relative">
-                        <img
+                        <Image
                             className="max-w-full max-h-[80vh] rounded-md"
                             src={selectImg}
                             alt="Expanded View"
+                            width={800}
+                            height={600}
                             onClick={(e) => e.stopPropagation()}
                         />
                         <span

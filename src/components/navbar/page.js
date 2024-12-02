@@ -1,8 +1,8 @@
 'use client';
 
 import React, { useState } from 'react';
+import Link from 'next/link';
 import style from "./navbar.module.css";
-
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -16,11 +16,9 @@ const Navbar = () => {
       <nav className="fixed bg-slate-700 border-gray-200 dark:bg-gray-900 w-full z-10 shadow-lg">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           {/* Logo */}
-          <a href="#" className="flex items-center">
-            <span className={` ${style.nameBrand} self-center text-2xl font-semibold whitespace-nowrap dark:text-white`}>
-              Rival Fahrezy
-            </span>
-          </a>
+          <Link href="#" className={`${style.nameBrand} self-center text-2xl font-semibold whitespace-nowrap dark:text-white`}>
+            Rival Fahrezy
+          </Link>
 
           <button
             onClick={toggleMenu}
@@ -52,47 +50,31 @@ const Navbar = () => {
             className={`${open ? 'block' : 'hidden'} w-full md:flex md:w-auto`}
             id="navbar-dropdown"
           >
-            <ul className="flex flex-col font-medium mt-4 md:mt-0 md:flex-row md:space-x-8  dark:bg-gray-800">
-
+            <ul className="flex flex-col font-medium mt-4 md:mt-0 md:flex-row md:space-x-8 dark:bg-gray-800">
               <li>
-                <a
-                  href="#header"
-                  className="block py-2 px-3 md:w-20 md:text-center text-white rounded hover:bg-gray-100 md:hover:bg-white md:hover:text-black md:px-2 md:p-0 dark:text-white"
-                >
+                <Link href="#header" className="block py-2 px-3 md:w-20 md:text-center text-white rounded hover:bg-gray-100 md:hover:bg-white md:hover:text-black md:px-2 md:p-0 dark:text-white">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#skill"
-                  className="block py-2 px-3 md:w-20 md:text-center text-white rounded hover:bg-gray-100 md:hover:bg-white md:hover:text-black md:px-2 md:p-0 dark:text-white"
-                >
+                <Link href="#skill" className="block py-2 px-3 md:w-20 md:text-center text-white rounded hover:bg-gray-100 md:hover:bg-white md:hover:text-black md:px-2 md:p-0 dark:text-white">
                   Skill
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#projects"
-                  className="block py-2 px-3 md:w-20 md:text-center text-white rounded hover:bg-gray-100 md:hover:bg-white md:hover:text-black md:px-2 md:p-0 dark:text-white"
-                >
+                <Link href="#projects" className="block py-2 px-3 md:w-20 md:text-center text-white rounded hover:bg-gray-100 md:hover:bg-white md:hover:text-black md:px-2 md:p-0 dark:text-white">
                   Projects
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#certificates"
-                  className="block py-2 px-3 md:w-20 md:text-center text-white rounded hover:bg-gray-100 md:hover:bg-white md:hover:text-black md:px-2 md:p-0 dark:text-white"
-                >
+                <Link href="#certificates" className="block py-2 px-3 md:w-20 md:text-center text-white rounded hover:bg-gray-100 md:hover:bg-white md:hover:text-black md:px-2 md:p-0 dark:text-white">
                   Certificate
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#about"
-                  className="block py-2 px-3 md:w-20 md:text-center text-white rounded hover:bg-gray-100 md:hover:bg-white md:hover:text-black md:px-2 md:p-0 dark:text-white"
-                >
+                <Link href="#about" className="block py-2 px-3 md:w-20 md:text-center text-white rounded hover:bg-gray-100 md:hover:bg-white md:hover:text-black md:px-2 md:p-0 dark:text-white">
                   About
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

@@ -21,8 +21,6 @@
 
 .bgImg {
     padding: 10px;
-    height: 130px;
-    width: 130px;
     filter: saturate(0);
     transition: .3s;
     border-radius: 30%;
