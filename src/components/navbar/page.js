@@ -52,7 +52,7 @@ const Navbar = () => {
           >
             <ul className="flex flex-col font-medium mt-4 md:mt-0 md:flex-row md:space-x-8 dark:bg-gray-800">
               <li>
-                <Link href="#header" className="block py-2 px-3 md:w-20 md:text-center text-white rounded hover:bg-gray-100 md:hover:bg-white md:hover:text-black md:px-2 md:p-0 dark:text-white">
+                <Link href="#home" className="block py-2 px-3 md:w-20 md:text-center text-white rounded hover:bg-gray-100 md:hover:bg-white md:hover:text-black md:px-2 md:p-0 dark:text-white">
                   Home
                 </Link>
               </li>

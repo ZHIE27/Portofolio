@@ -9,7 +9,7 @@
     top: -170px;
     width: 90%;
     clip-path: polygon(0  10%, 100% 0, 100% 90%, 0 100%);
-    min-height: 130vh;
+    min-height: 120vh;
     max-height: 150vh;
 }
 
@@ -27,12 +27,8 @@
 .card {
     width: 240px;
     height: 140px;
+    border: 2px solid white;
     overflow: hidden;
-}
-
-.card img {
-    width: 240px;
-    height: 140px;
 }
 
 .card .wrap span {
@@ -95,22 +91,32 @@
 }
 
 
-@media only screen and (max-width: 600px) {
-    .card {
+@media only screen and (max-width: 480px) {
 
-        width: 200px;
-        height: 100px;
+    .container { 
+        width: 100%;
+        min-height: 800px;
+        max-height: 1000px;
+        overflow-y: scroll;
+    }
+
+    .container .title {
+        font-size: 5rem;
+    }
+
+    .card, .image {
+
+        width: 120px;
+        height: 70px;
+        overflow: hidden;
     }
     
-    .card img {
-        width: 200px;
-        height: 100px;
-    }
+
     
     .card .wrap {
         top: -100px;
-        width: 200px;
-        height: 100px;
+        width: 100px;
+        height: 50px;
         background-color: white;
         display: none;
         opacity: 70% ;

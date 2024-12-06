@@ -20,14 +20,14 @@ const Sertificate = () => {
 
     return (
         <>
-            <div id="certificates" className={`${style.container} relative m-auto dark:bg-white bg-gray-700`}>
+            <div id="certificates" className={`${style.container} relative m-auto bg-gray-700`}>
                 <div className={`${style.wrapping} m-auto py-6`}>
                     <h1 className={`${style.title} text-center`}>Certificate</h1>
-                    <div className={`${style.cardsList} cursor-pointer grid grid-cols-2 gap-4 md:grid-cols-4 md:gap-3 w-full`}>
+                    <div className={`${style.cardsList} cursor-pointer grid grid-cols-3 md:grid-cols-4 gap-1 md:gap-4`}>
                         {projectList.map((item) => (
                             <div
                                 key={item.id}
-                                className={`${style.card} bg-slate-500`}
+                                className={`${style.card} bg-slate-500 m-auto`}
                                 onClick={() => setSelectImg(item.imgUrl)}
                             >
                                 <Image
