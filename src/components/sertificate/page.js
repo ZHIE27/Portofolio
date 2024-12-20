@@ -6,14 +6,7 @@ import style from "./sertificate.module.css";
 
 const Sertificate = () => {
     const projectList = [
-        { id: 1, imgUrl: '/img/certificate/img.jpg', desc: 'Project 1' },
-        { id: 2, imgUrl: '/img/certificate/img.jpg', desc: 'Project 2' },
-        { id: 3, imgUrl: '/img/certificate/img.jpg', desc: 'Project 3' },
-        { id: 4, imgUrl: '/img/certificate/img.jpg', desc: 'Project 4' },
-        { id: 5, imgUrl: '/img/certificate/img.jpg', desc: 'Project 5' },
-        { id: 6, imgUrl: '/img/certificate/img.jpg', desc: 'Project 6' },
-        { id: 7, imgUrl: '/img/img.jpg', desc: 'Project 7' },
-        { id: 8, imgUrl: '/img/img.jpg', desc: 'Project 8' },
+        { id: 1, imgUrl: '/img/certificate/sololearn.jpg', desc: 'SoloLearn' }
     ];
 
     const [selectImg, setSelectImg] = useState(null);

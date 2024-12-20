@@ -32,9 +32,8 @@
 }
 
 .card .wrap span {
-    line-height: 140px;
+    line-height: 70px;
     font-family: "Dhurjati", sans-serif;
-    opacity: 100% !important;
     display: block;
 }
 

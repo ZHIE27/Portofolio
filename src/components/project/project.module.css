@@ -20,33 +20,33 @@
     font-size: 5rem;
 }
 
-.card {
+
+/* tinggi dan lebar card */
+.card, .img , .span {
     width: 240px;
     height: 140px;
+} 
+/* end */
+
+.card {
     overflow: hidden;
 }
 
-.card a img {
-    width: 240px;
-    height: 140px;
-}
 
-.card span {
+.card .span {
     top: -140px;
-    width: 240px;
-    height: 140px;
     line-height: 140px;
     font-family: "Dhurjati", sans-serif;
     color: white;
     display: none;
 }
 
-.card:hover span {
+.card:hover .span {
     display: block;
     animation: animasiSpan .3s ease alternate;
 }
 
-.card:hover img {
+.card:hover .img {
     animation: animasiImage .3s ease forwards;
 }
 
@@ -57,7 +57,7 @@
     }
 
     100% {
-        opacity: 50%;
+        opacity: 70%;
         height: 140px;
     }
 }
@@ -73,22 +73,27 @@
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
+
+    .container {
+        width: 100%;
+    }
+
     .card {
 
-        width: 200px;
-        height: 100px;
+        width: 120px;
+        height: 70px;
     }
     
     .card a img {
-        width: 200px;
-        height: 100px;
+        width: 120px;
+        height: 70px;
     }
     
     .card span {
         top: -100px;
-        width: 200px;
-        height: 100px;
+        width: 100px;
+        height: 50px;
         line-height: 100px;
         font-family: "Dhurjati", sans-serif;
         color: white;
@@ -102,7 +107,7 @@
         }
     
         100% {
-            opacity: 50%;
+            opacity: 70%;
             height: 100px;
         }
     }
