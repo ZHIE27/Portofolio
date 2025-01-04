@@ -4,7 +4,7 @@ import Project from "@/components/project/page";
 import Sertificate from "@/components/sertificate/page";
 import Skill from "@/components/skill/page";
 import Footer from "@/components/footer/page";
-import Image from "next/image";
+import Contact from "@/components/contact/page";
 
 export default function Home() {
   return (
@@ -15,6 +15,7 @@ export default function Home() {
     <Sertificate />
     <About />
     <Footer />
+    <Contact />
     </>
   )
 }

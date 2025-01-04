@@ -9,25 +9,25 @@ const Project = () => {
     const projectList = [
         {
             id: 1,
-            imgUrl: '/img/img.jpg',
+            imgUrl: '/img/project/tetris.png',
             desc: 'Tetris',
             link: 'https://tetris-8f5xsspbu-ejis-projects.vercel.app'
         },
         {
             id: 2,
-            imgUrl: '/img/img.jpg',
+            imgUrl: '/img/project/dashboard.png',
             desc: 'Dashboard',
             link: 'https://dashboard-unfinished.vercel.app/'
         },
         {
             id: 3,
-            imgUrl: '/img/img.jpg',
+            imgUrl: '/img/project/chart.png',
             desc: 'Chart',
             link: 'https://chart-dashboard-penjualan-tahunan.vercel.app/'
         },
         {
             id: 4,
-            imgUrl: '/img/img.jpg',
+            imgUrl: '/img/project/loginpage.png',
             desc: 'Login Page',
             link: 'https://login-page-eight-murex.vercel.app/'
         }

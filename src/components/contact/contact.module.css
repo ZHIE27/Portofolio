@@ -1,0 +1,22 @@
+/* Tilte Page Font */
+@import url('https://fonts.googleapis.com/css2?family=Bokor&family=Concert+One&family=Lilita+One&family=Oswald:wght@200..700&family=Sixtyfour+Convergence&display=swap');
+
+.container {
+    padding: 60px 20px;
+    top: -420px;
+    width: 90%;
+    clip-path: polygon(0  10%, 100% 0, 100% 90%, 0 100%);
+    min-height: 120vh;
+    max-height: 150vh;
+}
+
+.container .title {
+    font-family: "Bokor", system-ui;
+    color: white;
+    font-size: 5rem;
+}
+
+.map {
+    width: 400px;
+    height: 400px;
+}
